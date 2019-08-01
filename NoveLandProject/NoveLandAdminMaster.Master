@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NoveLandAdminMaster.master.cs" Inherits="NoveLandProject.NoveLandAdminMaster" %>
+
+<%@ Register src="UserControls/LoginStatus.ascx" tagname="LoginStatus" tagprefix="uc1" %>
+<%@ Register Src="~/UserControls/AdminMenu.ascx" TagPrefix="uc1" TagName="AdminMenu" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server"> 
+
+    <title></title> 
+    
+    <link href="css/AdminMasterStyle.css" rel="stylesheet" />  
+
+    <asp:ContentPlaceHolder ID="head" runat="server"> 
+    </asp:ContentPlaceHolder> 
+
+</head>
+<body>
+
+    <header id="headerAdmin" class="auto-style3">  
+	    <a href="Home.aspx"><b>Admin NoveLand</b><img src="Images/logo-book.gif" width="65" height="70" alt="NoveLand Icon" /></a> 
+	</header> 
+
+    <form id="form1" runat="server" enctype="multipart/form-data"> 
+        <table style="width: 100%;"> 
+            <tr style="vertical-align: top"> 
+                <td class="tbldata1"> 
+                    <uc1:LoginStatus ID="LoginStatus1" runat="server" />
+                    <uc1:AdminMenu runat="server" id="AdminMenu" />
+                </td> 
+                <td class="tbldata2"> 
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> 
+                    </asp:ContentPlaceHolder> 
+                </td> 
+            </tr> 
+        </table> 
+    </form> 
+
+    <footer id="footerAdmin">  
+	    &copy; ISB42403 - NoveLand: Web Application Development Project (Admin)
+	</footer>
+
+</body>
+</html>

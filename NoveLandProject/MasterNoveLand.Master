@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterNoveLand.master.cs" Inherits="NoveLandProject.MasterNoveLand" %>
+
+<%@ Register src="UserControls/GenresList.ascx" tagname="GenresList" tagprefix="uc1" %>
+<%@ Register Src="~/UserControls/SearchBox.ascx" TagPrefix="uc1" TagName="SearchBox" %>
+<%@ Register Src="~/UserControls/LoginStatus.ascx" TagPrefix="uc1" TagName="LoginStatus" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link href="css/MasterStyle.css" rel="stylesheet" />  
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .auto-style1 {
+            height: 103px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header id="header" class="auto-style1">  
+	    <a href="Default.aspx"><b>NoveLand</b><img src="Images/logo-book.gif" width="65" height="70" alt="NoveLand Icon" /></a> 
+	</header> 
+
+    <form id="form1" runat="server">
+
+
+        <table style="width: 100%;">    
+            <tr style="height:20px; text-align: center; width: 100%; background-color: #868ef9; padding: 5px;">
+                <td style="width: 52%;">
+                    <uc1:GenresList ID="GenresList1" runat="server" />
+                </td>
+                <td style="width: 26%;">
+                    <uc1:SearchBox runat="server" id="SearchBox" />
+                </td>
+                <td style="width: 17%;">
+                    <uc1:LoginStatus runat="server" id="LoginStatus" />
+                </td>
+                <td style="width: 5%;">
+                    <a href="Cart.aspx"><img src="Images/basket-icon.png" width="40" height="40" alt="Cart" /></a> 
+                </td>
+            </tr>
+            <tr style="vertical-align: top;width: 100%; background-color: #d5d8fd;">                  
+                <td colspan="4">                     
+                    
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                    </asp:ContentPlaceHolder>  
+                    
+                </td>    
+            </tr>        
+        </table>
+
+
+    </form>
+
+    <footer id="footer">  
+        <%--&copy; ISB42403 - NoveLand: Web Application Development Project&emsp;&emsp;--%>
+        <a href="Feedback.aspx">Feedback</a>&emsp;&emsp;<a href="Evaluation.aspx">Evaluation</a>
+	</footer>
+
+</body>
+</html>

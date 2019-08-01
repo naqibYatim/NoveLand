@@ -1,0 +1,147 @@
+﻿/******************************************* Header and Footer ****************************************************/
+
+#headerAdmin {
+    color: #020f85;
+    background-color: #acb2ff;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#footerAdmin {
+    background-color: #729ce1; 
+    color: #080f74;
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 3px;
+    font-size: 15px;
+}
+
+/******************************************* Header and Footer ****************************************************/
+
+
+/******************************************* Table style ****************************************************/
+
+.tbldata1 {
+    background-color: #c6cafd;
+    width: 140px;
+}
+
+.tbldata2 {
+    background-color: #dcdefb
+}
+
+/******************************************* Table style ****************************************************/
+
+/******************************************* Button design Logout ***************************************************/
+
+.buttonDesignLogout {
+    background-color: #fb6e84;
+    border: none;
+    color: white;
+    padding: 10px 43px;
+    margin-left: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/******************************************* Button design Logout ***************************************************/
+
+/******************************************* Menu Item Style ***************************************************/
+
+.menuStyle {
+    text-decoration: none;
+    text-align: center;
+    margin-left: 1px;
+    Font-Size: 16px;
+    font-family: Trebuchet MS,Arial,Helvetica,sans-serif;
+}
+
+.menuitemstyle {
+    padding-top: 20px;
+}
+
+    .menuitemstyle:hover {
+        background-color: #4382ea;
+        color: white;
+    }
+
+/******************************************* Menu Item Style ***************************************************/
+
+
+/******************************************* Add new product page ***************************************************/
+
+.updatetitle {
+    color: #020f85;
+    font-family: Arial Narrow, sans-serif;
+    font-size: 30px;
+}
+
+.updateinfo {
+    color: #020f85;
+    font-family: Arial Narrow, sans-serif;
+    font-size: 20px;
+}
+
+.boxUpdate {
+    background: #bcc0fd;
+    width: 500px;
+    border-radius: 6px;
+    margin: 0 auto 0 auto;
+    padding: 30px 0px 30px 0px;
+    border: #2980b9 4px solid;
+}
+
+.drpdwnstyle {
+    color: #020f85;
+    font-family: Arial Narrow, sans-serif;
+    font-size: 20px;
+    padding-right: 90px;
+}
+
+.paragstyle {
+    color: #020f85;
+    font-family: Arial Narrow, sans-serif;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.txtboxstyle {
+    padding: 10px 20px;
+}
+
+.buttondesignfileupload {
+    background-color: #acb2ff;
+    border: none;
+    color: white;
+    padding: 15px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonDesignUpload {
+    background-color: #4367e7;
+    border: none;
+    color: white;
+    padding: 15px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.ChkBoxClass input {
+    width: 25px;
+    height: 25px;
+}
+
+/******************************************* Add new product page ***************************************************/
+
